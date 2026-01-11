@@ -45,7 +45,7 @@ export default function ProjectsSection() {
 
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                 {projects.map((project) => (
-                    <div key={project.title} className="border-gray-300 border shadow-sm rounded-2xl overflow-hidden">
+                    <div key={project.title} className="border-gray-300 border shadow-sm rounded-2xl overflow-hidden dark:border-[#353535]">
                         <Image src={project.image} alt={project.title} width={500} height={200} className="w-full h-40 object-cover" priority />
 
                         <div className="p-6">
@@ -54,12 +54,12 @@ export default function ProjectsSection() {
                             <p className="mb-6 leading-8 text-zinc-600 dark:text-gray-200 text-justify">{project.description}</p>
 
                             <div className="flex flex-col gap-3 sm:flex-row text-center">
-                                <a href={project.github} target="_blank" className="bg-foreground text-sm text-white px-5 py-2.5 rounded-3xl transition hover:bg-[#000000b3] dark:text-black">
+                                <a href={project.github} target="_blank" className="bg-foreground text-white text-sm px-5 py-2.5 rounded-3xl transition hover:bg-[#000000b3] dark:hover:bg-[#ccc] dark:text-black">
                                     View Project
                                 </a>
 
                                 {project.demo && (
-                                    <a href={project.demo} target="_blank" className="bg-none text-sm text-black border border-gray-300 px-5 py-2.5 rounded-3xl transition hover:bg-[#00000021] dark:border-gray-300 text-white">
+                                    <a href={project.demo} target="_blank" className="bg-none text-sm text-black border border-gray-300 px-5 py-2.5 rounded-3xl transition hover:bg-[#00000021] dark:hover:bg-[#353535] dark:text-white dark:border-[#353535]">
                                         Demo
                                     </a>
                                 )}
