@@ -59,7 +59,7 @@ export default function ProjectsSection() {
                                 </a>
 
                                 {project.demo && (
-                                    <a href={project.demo} target="_blank" className="bg-white text-sm text-black border border-gray-300 px-5 py-2.5 rounded-3xl transition hover:bg-[#00000021]">
+                                    <a href={project.demo} target="_blank" className="bg-white text-sm text-black border border-gray-300 px-5 py-2.5 rounded-3xl transition hover:bg-[#00000021] dark:border-gray-300 bg-none">
                                         Demo
                                     </a>
                                 )}
