@@ -32,22 +32,22 @@ export default function Contact() {
                     <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                         <div className="sm:col-span-3">
                             <label className="block text-sm font-medium">Your name</label>
-                            <input type="text" name="user_name" required className="mt-2 block w-full rounded-md bg-gray-200 px-3 py-1.5" />
+                            <input type="text" name="user_name" required className="mt-2 block w-full rounded-md bg-gray-200 px-3 py-1.5 dark:text-black" placeholder="Your name" aria-required="true" />
                         </div>
 
                         <div className="sm:col-span-3">
                             <label className="block text-sm font-medium">Your email</label>
-                            <input type="email" name="user_email" required className="mt-2 block w-full rounded-md bg-gray-200 px-3 py-1.5" />
+                            <input type="email" name="user_email" required className="mt-2 block w-full rounded-md bg-gray-200 px-3 py-1.5 dark:text-black" placeholder="Your email" aria-required="true" />
                         </div>
 
                         <div className="sm:col-span-full">
                             <label className="block text-sm font-medium">Your message</label>
-                            <textarea name="message" rows={4} required className="mt-2 block w-full rounded-md bg-gray-200 px-3 py-1.5" />
+                            <textarea name="message" rows={4} required className="mt-2 block w-full rounded-md bg-gray-200 px-3 py-1.5 dark:text-black" placeholder="Your message" aria-required="true" />
                         </div>
                     </div>
 
                     <div className="mt-6 flex justify-center">
-                        <button type="submit" className="bg-black text-white px-6 py-2.5 rounded-3xl hover:opacity-80">
+                        <button type="submit" className="bg-foreground text-white px-6 py-2.5 rounded-3xl transition hover:opacity-80 dark:hover:bg-[#ccc] dark:text-black">
                             Send Message
                         </button>
                     </div>
