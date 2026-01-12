@@ -6,7 +6,7 @@ export default function Header() {
             <Image className="rounded-full" src="/profile-pic-2.jpg" alt="logo" width={100} height={20} priority />
             <div className="flex flex-col items-center gap-6 py-5 text-center sm:items-start sm:text-left">
                 <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Rizki Cahya Ramdani</h1>
-                <span className="">Software Engineering | Web Developer</span>
+                <span className="">Front-end Developer | UI/UX Designer</span>
                 <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400 text-justify">Computer Science student at Universitas Amikom Yogyakarta. Passionate about building web applications, teaching programming, and exploring machine learning in real-world projects.</p>
             </div>
             <div className="flex flex-col w-full gap-6 text-base font-medium sm:flex-row">
