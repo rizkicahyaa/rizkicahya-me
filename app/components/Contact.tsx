@@ -1,13 +1,15 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
     const formRef = useRef<HTMLFormElement | null>(null);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        setIsSubmitting(true);
 
         if (!formRef.current) return;
 
@@ -15,44 +17,52 @@ export default function Contact() {
             () => {
                 alert("Message sent successfully!");
                 formRef.current?.reset();
+                setIsSubmitting(false);
             },
             (error) => {
                 console.error(error);
                 alert("Failed to send message");
-            }
+                setIsSubmitting(false);
+            },
         );
     };
 
     return (
-        <div className="flex flex-col flex-grow w-full gap-6 mt-10">
-            <div className="pb-4">
-                <h1 className="font-bold text-2xl">Contact Me</h1>
+        <section className="flex flex-col w-full gap-8 mt-24 mb-16 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500 fill-mode-backwards">
+            <h2 className="font-bold text-3xl tracking-tight text-white border-b border-zinc-800 pb-4">Get in Touch</h2>
 
-                <form ref={formRef} onSubmit={sendEmail}>
-                    <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-                        <div className="sm:col-span-3">
-                            <label className="block text-sm font-medium">Your name</label>
-                            <input type="text" name="user_name" required className="mt-2 block w-full rounded-md bg-gray-200 px-3 py-1.5 outline-0 dark:text-black" placeholder="Your name" aria-required="true" />
-                        </div>
+            <form ref={formRef} onSubmit={sendEmail} className="bg-zinc-900/50 p-8 rounded-2xl border border-zinc-800 shadow-sm relative overflow-hidden backdrop-blur-sm">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-                        <div className="sm:col-span-3">
-                            <label className="block text-sm font-medium">Your email</label>
-                            <input type="email" name="user_email" required className="mt-2 block w-full rounded-md bg-gray-200 px-3 py-1.5 outline-0 dark:text-black" placeholder="Your email" aria-required="true" />
-                        </div>
-
-                        <div className="sm:col-span-full">
-                            <label className="block text-sm font-medium">Your message</label>
-                            <textarea name="message" rows={4} required className="mt-2 block w-full rounded-md bg-gray-200 px-3 py-1.5 outline-0 dark:text-black" placeholder="Your message" aria-required="true" />
+                <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2">
+                    <div className="sm:col-span-1">
+                        <label className="block text-sm font-medium leading-6 text-zinc-300">Name</label>
+                        <div className="mt-2">
+                            <input type="text" name="user_name" required className="block w-full rounded-md border-0 py-2.5 px-3 bg-zinc-800/50 text-white shadow-sm ring-1 ring-inset ring-zinc-700 placeholder:text-zinc-500 focus:ring-2 focus:ring-inset focus:ring-cyan-500 sm:text-sm sm:leading-6 transition-all" placeholder="Your name" />
                         </div>
                     </div>
 
-                    <div className="mt-6 flex justify-center">
-                        <button type="submit" className="bg-foreground text-white px-6 py-2.5 rounded-3xl transition hover:opacity-80 dark:hover:bg-[#ccc] dark:text-black">
-                            Send Message
-                        </button>
+                    <div className="sm:col-span-1">
+                        <label className="block text-sm font-medium leading-6 text-zinc-300">Email</label>
+                        <div className="mt-2">
+                            <input type="email" name="user_email" required className="block w-full rounded-md border-0 py-2.5 px-3 bg-zinc-800/50 text-white shadow-sm ring-1 ring-inset ring-zinc-700 placeholder:text-zinc-500 focus:ring-2 focus:ring-inset focus:ring-cyan-500 sm:text-sm sm:leading-6 transition-all" placeholder="your@email.com" />
+                        </div>
                     </div>
-                </form>
-            </div>
-        </div>
+
+                    <div className="sm:col-span-full">
+                        <label className="block text-sm font-medium leading-6 text-zinc-300">Message</label>
+                        <div className="mt-2">
+                            <textarea name="message" rows={4} required className="block w-full rounded-md border-0 py-2.5 px-3 bg-zinc-800/50 text-white shadow-sm ring-1 ring-inset ring-zinc-700 placeholder:text-zinc-500 focus:ring-2 focus:ring-inset focus:ring-cyan-500 sm:text-sm sm:leading-6 transition-all" placeholder="How can I help you?" />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="mt-8 flex justify-end">
+                    <button type="submit" disabled={isSubmitting} className="rounded-full bg-white px-8 py-2.5 text-sm font-bold text-zinc-950 shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:bg-cyan-50 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-500 transition-all disabled:opacity-70 disabled:cursor-not-allowed">
+                        {isSubmitting ? "Sending..." : "Send Message"}
+                    </button>
+                </div>
+            </form>
+        </section>
     );
 }

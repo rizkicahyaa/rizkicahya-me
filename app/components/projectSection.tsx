@@ -40,27 +40,30 @@ const projects: Project[] = [
 
 export default function ProjectsSection() {
     return (
-        <section className="flex flex-col w-full gap-6 mt-10">
-            <h1 className="font-bold text-2xl">My Project</h1>
+        <section className="flex flex-col w-full gap-8 mt-24 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300 fill-mode-backwards">
+            <h2 className="font-bold text-3xl tracking-tight text-white border-b border-zinc-800 pb-4">Featured Projects</h2>
 
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                 {projects.map((project) => (
-                    <div key={project.title} className="border-gray-300 border shadow-sm rounded-2xl overflow-hidden dark:border-[#353535]">
-                        <Image src={project.image} alt={project.title} width={500} height={200} className="w-full h-40 object-cover" priority />
+                    <div key={project.title} className="group flex flex-col overflow-hidden rounded-2xl bg-zinc-900/50 border border-zinc-800 shadow-sm transition-all duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.1)] hover:border-cyan-500/30 hover:-translate-y-1 backdrop-blur-sm">
+                        <div className="relative h-48 w-full overflow-hidden bg-zinc-800">
+                            <Image src={project.image} alt={project.title} width={600} height={300} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" priority={false} />
+                            {/* Overlay */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent opacity-60"></div>
+                        </div>
 
-                        <div className="p-6">
-                            <h2 className="font-bold text-lg mb-3">{project.title}</h2>
+                        <div className="flex flex-1 flex-col p-6">
+                            <h3 className="mb-2 text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">{project.title}</h3>
+                            <p className="mb-6 flex-1 text-base leading-relaxed text-zinc-400 text-justify">{project.description}</p>
 
-                            <p className="mb-6 leading-8 text-zinc-600 dark:text-gray-200 text-justify">{project.description}</p>
-
-                            <div className="flex flex-col gap-3 sm:flex-row text-center">
-                                <a href={project.github} target="_blank" className="bg-foreground text-white text-sm px-5 py-2.5 rounded-3xl transition hover:bg-[#000000b3] dark:hover:bg-[#ccc] dark:text-black">
-                                    View Project
+                            <div className="flex flex-wrap gap-3 mt-auto">
+                                <a href={project.github} target="_blank" className="inline-flex items-center justify-center rounded-full bg-white px-4 py-2 text-sm font-bold text-zinc-950 transition-colors hover:bg-cyan-50">
+                                    GitHub
                                 </a>
 
                                 {project.demo && (
-                                    <a href={project.demo} target="_blank" className="bg-none text-sm text-black border border-gray-300 px-5 py-2.5 rounded-3xl transition hover:bg-[#00000021] dark:hover:bg-[#353535] dark:text-white dark:border-[#353535]">
-                                        Demo
+                                    <a href={project.demo} target="_blank" className="inline-flex items-center justify-center rounded-full border border-zinc-700 bg-transparent px-4 py-2 text-sm font-medium text-zinc-300 transition-colors hover:bg-zinc-800 hover:text-white hover:border-zinc-600">
+                                        Live Demo
                                     </a>
                                 )}
                             </div>
@@ -69,14 +72,15 @@ export default function ProjectsSection() {
                 ))}
             </div>
 
-            <div className="text-center mt-6">
-                <a href="https://github.com/rizkicahyaa?tab=repositories" target="_blank" className="hover:text-blue-500 transition">
-                    More? On my GitHub →
+            <div className="flex justify-center mt-8">
+                <a href="https://github.com/rizkicahyaa?tab=repositories" target="_blank" className="inline-flex items-center gap-2 text-cyan-400 font-medium hover:text-cyan-300 transition-colors group">
+                    View more on GitHub
+                    <span className="transition-transform group-hover:translate-x-1">→</span>
                 </a>
             </div>
 
-            <div className="mx-auto">
-                <div className="mx-auto w-36 h-0.5 bg-gray-200 mt-12"></div>
+            <div className="mx-auto w-full max-w-xs">
+                <div className="w-full h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent mt-16"></div>
             </div>
         </section>
     );
