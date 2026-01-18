@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: "@rizkichrmdn",
+    title: "@rizkichrmdn | Profile",
     description: "Professional portfolio and SaaS landing page.",
 };
 
