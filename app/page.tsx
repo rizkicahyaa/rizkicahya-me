@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <div className="min-h-screen bg-zinc-950 bg-grid-white/[0.02] text-white selection:bg-zinc-800 selection:text-white font-sans relative">
             <header className="fixed top-0 left-0 right-0 z-50 px-6 py-6 flex justify-between items-center bg-zinc-950/80 backdrop-blur-sm border-b border-zinc-900">
-                <div className="text-xl font-bold tracking-tighter">Rizki.</div>
+                <div className="text-xl font-bold tracking-tighter">Rizki Cahya.</div>
                 <nav className="hidden md:flex gap-6 text-sm font-medium text-zinc-400">
                     <a href="#" className="hover:text-white transition-colors">
                         Home
