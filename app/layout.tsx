@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Nunito({
+const inter = Inter({
     subsets: ["latin"],
-    weight: ["400", "500", "600", "700"],
-    display: "swap",
+    variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
-    title: "@rizkichrmdn",
-    description: "Rizki Cahya's Profile",
+    title: "Rizki Cahya - Portfolio",
+    description: "Professional portfolio and SaaS landing page.",
 };
 
 export default function RootLayout({
