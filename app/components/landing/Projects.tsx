@@ -1,26 +1,29 @@
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Github, ExternalLink } from "lucide-react";
 
 const projects = [
     {
         title: "MiraiNime",
         description: "Anime discovery platform with Jikan API.",
         image: "/images/mirainime.png",
-        link: "https://mirainime.vercel.app",
+        demo: "https://mirainime.vercel.app",
+        github: "https://github.com/rizkicahyaa/mirainime",
         tags: ["Next.js", "API", "Tailwind"],
     },
     {
         title: "Focsy",
         description: "Productivity timer for deep work.",
         image: "/images/focsy-2.png",
-        link: "https://focsy.vercel.app",
+        demo: "https://focsy.vercel.app",
+        github: "https://github.com/rizkicahyaa/focsy",
         tags: ["React", "State Management"],
     },
     {
         title: "Roomoria",
         description: "Hotel booking management system.",
         image: "/images/roomoria.png",
-        link: "https://roomoria.vercel.app",
+        demo: "https://roomoria.vercel.app",
+        github: "https://github.com/rizkicahyaa/roomoria",
         tags: ["TypeScript", "Dashboard"],
     },
 ];
@@ -35,7 +38,7 @@ export default function Projects() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map((project) => (
-                    <a key={project.title} href={project.link} target="_blank" className="group flex flex-col bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-600 transition-colors">
+                    <div key={project.title} className="group flex flex-col bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-600 transition-colors">
                         <div className="relative h-56 w-full bg-zinc-900">
                             <Image src={project.image} alt={project.title} fill className="object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
                         </div>
@@ -43,20 +46,30 @@ export default function Projects() {
                         <div className="p-6 flex flex-col flex-1">
                             <div className="flex justify-between items-start mb-2">
                                 <h3 className="text-lg font-semibold text-white">{project.title}</h3>
-                                <ArrowUpRight className="w-5 h-5 text-zinc-600 group-hover:text-white transition-colors" />
                             </div>
 
                             <p className="text-zinc-500 text-sm mb-6 flex-1 line-clamp-2">{project.description}</p>
 
-                            <div className="flex flex-wrap gap-2">
+                            <div className="flex flex-wrap gap-2 mb-6">
                                 {project.tags.map((tag) => (
                                     <span key={tag} className="text-xs px-2 py-1 bg-zinc-900 text-zinc-400 rounded-md border border-zinc-800">
                                         {tag}
                                     </span>
                                 ))}
                             </div>
+
+                            <div className="flex gap-3 mt-auto">
+                                <a href={project.demo} target="_blank" className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-white text-black text-sm font-medium rounded-lg hover:bg-zinc-200 transition-colors">
+                                    <ExternalLink className="w-4 h-4" />
+                                    Demo
+                                </a>
+                                <a href={project.github} target="_blank" className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-zinc-800 text-white text-sm font-medium rounded-lg hover:bg-zinc-700 transition-colors border border-zinc-700">
+                                    <Github className="w-4 h-4" />
+                                    Github
+                                </a>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                 ))}
             </div>
         </section>
