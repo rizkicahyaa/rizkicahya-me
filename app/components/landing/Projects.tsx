@@ -32,7 +32,7 @@ export default function Projects() {
     return (
         <section id="projects" className="py-32 px-4 max-w-7xl mx-auto">
             <div className="mb-16">
-                <h2 className="text-3xl font-bold text-white mb-4">Selected Projects</h2>
+                <h2 className="text-3xl font-bold text-white mb-4">My Projects</h2>
                 <p className="text-zinc-500 max-w-xl">A collection of applications focusing on performance and user experience.</p>
             </div>
 
