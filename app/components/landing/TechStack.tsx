@@ -1,16 +1,31 @@
+import { SiJavascript, SiReact, SiNextdotjs, SiTypescript, SiBootstrap, SiTailwindcss, SiNodedotjs, SiMysql, SiFigma, SiGit } from "react-icons/si";
+
 export default function TechStack() {
-    const stack = ["JavaScript", "React", "Next.js", "TypeScript", "Bootstrap", "Tailwind CSS", "Node.js", "MySQL", "Figma", "Git"];
+    const stack = [
+        { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
+        { name: "React", icon: SiReact, color: "text-blue-400" },
+        { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
+        { name: "TypeScript", icon: SiTypescript, color: "text-blue-500" },
+        { name: "Bootstrap", icon: SiBootstrap, color: "text-purple-500" },
+        { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-400" },
+        { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
+        { name: "MySQL", icon: SiMysql, color: "text-orange-400" },
+        { name: "Figma", icon: SiFigma, color: "text-pink-400" },
+        { name: "Git", icon: SiGit, color: "text-red-500" },
+    ];
 
     return (
         <section className="py-20 border-y border-zinc-900">
             <div className="max-w-7xl mx-auto px-4 flex flex-col items-center">
                 <p className="text-zinc-500 text-sm font-medium uppercase tracking-widest mb-10">Tech Stack</p>
 
-                <div className="flex flex-wrap justify-center gap-3">
+                <div className="flex flex-wrap justify-center gap-6">
                     {stack.map((tech) => (
-                        <span key={tech} className="px-5 py-2 rounded-full bg-zinc-900 text-zinc-400 text-sm border border-zinc-800 hover:border-zinc-700 transition-colors cursor-default">
-                            {tech}
-                        </span>
+                        <div key={tech.name} className="flex flex-col items-center gap-2 group cursor-pointer">
+                            <div className={`p-4 rounded-2xl bg-zinc-900 border border-zinc-800 group-hover:border-zinc-700 transition-all duration-300 group-hover:bg-zinc-800`}>
+                                <tech.icon className={`w-8 h-8 ${tech.color} opacity-80 group-hover:opacity-100 transition-opacity`} />
+                            </div>
+                        </div>
                     ))}
                 </div>
             </div>
