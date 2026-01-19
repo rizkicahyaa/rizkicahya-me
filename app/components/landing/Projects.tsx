@@ -8,7 +8,7 @@ const projects = [
         image: "/images/mirainime.png",
         demo: "https://mirainime.vercel.app",
         github: "https://github.com/rizkicahyaa/mirainime",
-        tags: ["Next.js", "API", "Tailwind"],
+        tags: ["Vite", "React", "Typescript", "Tailwind CSS"],
     },
     {
         title: "Focsy",
@@ -16,7 +16,7 @@ const projects = [
         image: "/images/focsy-2.png",
         demo: "https://focsy.vercel.app",
         github: "https://github.com/rizkicahyaa/focsy",
-        tags: ["React", "State Management"],
+        tags: ["Vite", "React", "Typescript", "Tailwind CSS"],
     },
     {
         title: "Roomoria",
@@ -24,7 +24,7 @@ const projects = [
         image: "/images/roomoria.png",
         demo: "https://roomoria.vercel.app",
         github: "https://github.com/rizkicahyaa/roomoria",
-        tags: ["TypeScript", "Dashboard"],
+        tags: ["Vite", "React", "Typescript", "Tailwind CSS"],
     },
 ];
 
