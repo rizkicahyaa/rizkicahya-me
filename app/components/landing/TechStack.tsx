@@ -1,7 +1,8 @@
-import { SiJavascript, SiReact, SiNextdotjs, SiTypescript, SiBootstrap, SiTailwindcss, SiNodedotjs, SiMysql, SiFigma, SiGit, SiLaravel, SiCodeigniter } from "react-icons/si";
+import { SiJavascript, SiReact, SiNextdotjs, SiTypescript, SiBootstrap, SiTailwindcss, SiNodedotjs, SiMysql, SiFigma, SiGit, SiLaravel, SiCodeigniter, SiPhp } from "react-icons/si";
 
 export default function TechStack() {
     const stack = [
+        { name: "PHP", icon: SiPhp, color: "text-blue-500" },
         { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
         { name: "TypeScript", icon: SiTypescript, color: "text-blue-500" },
         { name: "React", icon: SiReact, color: "text-blue-400" },
@@ -18,7 +19,7 @@ export default function TechStack() {
 
     return (
         <section className="py-20 border-y border-zinc-900">
-            <div className="max-w-7xl mx-auto px-4 flex flex-col items-center">
+            <div className="max-w-4xl mx-auto px-4 flex flex-col items-center">
                 <p className="text-zinc-500 text-sm font-medium uppercase tracking-widest mb-10">Tech Stack</p>
 
                 <div className="flex flex-wrap justify-center gap-6">
