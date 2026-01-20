@@ -17,11 +17,11 @@ export default function Hero() {
 
                 <p className="text-lg text-zinc-500 mb-10 leading-relaxed max-w-lg">A passionate Front-end & UI/UX designer based in Indonesia. I transform complex problems into powerful, beautiful, and intuitive web applications.</p>
 
-                <div className="flex flex-col sm:flex-row gap-4">
-                    <Link href="#projects" className="inline-flex items-center justify-center h-12 px-8 rounded-full bg-white text-black font-medium hover:bg-zinc-200 transition-colors">
+                <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                    <Link href="#projects" className="flex w-full sm:w-auto items-center justify-center h-12 px-8 rounded-full bg-white text-black font-medium hover:bg-zinc-200 transition-colors">
                         View my work
                     </Link>
-                    <Link href="#contact" className="inline-flex items-center justify-center h-12 px-8 rounded-full bg-zinc-900 text-white font-medium hover:bg-zinc-800 transition-colors gap-2">
+                    <Link href="#contact" className="flex w-full sm:w-auto items-center justify-center h-12 px-8 rounded-full bg-zinc-900 text-white font-medium hover:bg-zinc-800 transition-colors gap-2">
                         Contact me
                         <ArrowRight className="w-4 h-4" />
                     </Link>
