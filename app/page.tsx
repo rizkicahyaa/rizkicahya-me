@@ -1,4 +1,5 @@
 import Hero from "./components/landing/Hero";
+import About from "./components/landing/About";
 import TechStack from "./components/landing/TechStack";
 import Projects from "./components/landing/Projects";
 import Contact from "./components/landing/Contact";
@@ -10,6 +11,7 @@ export default function Home() {
             <Navbar />
             <main className="pt-24">
                 <Hero />
+                <About />
                 <TechStack />
                 <Projects />
                 <Contact />
