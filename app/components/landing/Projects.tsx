@@ -11,6 +11,13 @@ const projects = [
         tags: ["Vite", "React", "Typescript", "Tailwind CSS"],
     },
     {
+        title: "Jogja Culinary",
+        description: "Website for culinary in Jogja.",
+        image: "/images/jogja-culinary.png",
+        github: "https://github.com/rizkicahyaa/jogja-culinary",
+        tags: ["Vite", "React", "Javascript", "Tailwind CSS", "MySQL", "Node.js", "Express.js"],
+    },
+    {
         title: "Focsy",
         description: "Productivity timer for deep work.",
         image: "/images/focsy-2.png",
@@ -59,10 +66,12 @@ export default function Projects() {
                             </div>
 
                             <div className="flex gap-3 mt-auto">
-                                <a href={project.demo} target="_blank" className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-white text-black text-sm font-medium rounded-lg hover:bg-zinc-200 transition-colors">
-                                    <ExternalLink className="w-4 h-4" />
-                                    Demo
-                                </a>
+                                {project.demo && (
+                                    <a href={project.demo} target="_blank" className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-white text-black text-sm font-medium rounded-lg hover:bg-zinc-200 transition-colors">
+                                        <ExternalLink className="w-4 h-4" />
+                                        Demo
+                                    </a>
+                                )}
                                 <a href={project.github} target="_blank" className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-zinc-800 text-white text-sm font-medium rounded-lg hover:bg-zinc-700 transition-colors border border-zinc-700">
                                     <Github className="w-4 h-4" />
                                     Github
