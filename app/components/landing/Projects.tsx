@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight, Github, ExternalLink } from "lucide-react";
 
@@ -43,7 +44,7 @@ export default function Projects() {
                 <p className="text-zinc-500 max-w-xl">A collection of applications focusing on performance and user experience.</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
                 {projects.map((project) => (
                     <div key={project.title} className="group flex flex-col bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-600 transition-colors">
                         <div className="relative h-56 w-full bg-zinc-900">
@@ -80,6 +81,12 @@ export default function Projects() {
                         </div>
                     </div>
                 ))}
+            </div>
+
+            <div className="flex justify-center">
+                <Link href="https://github.com/rizkicahyaa?tab=repositories" target="_blank" className="flex w-full sm:w-auto items-center justify-center h-12 px-8 rounded-full bg-white text-black font-medium hover:bg-zinc-200 transition-colors">
+                    View all projects
+                </Link>
             </div>
         </section>
     );
