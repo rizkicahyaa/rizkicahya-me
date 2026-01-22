@@ -34,6 +34,13 @@ const projects = [
         github: "https://github.com/rizkicahyaa/roomoria",
         tags: ["Vite", "React", "Typescript", "Tailwind CSS"],
     },
+    {
+        title: "Ngawikerto",
+        description: "Hotel booking management system (UI/UX)",
+        image: "/images/ngawikerto.png",
+        demo: "https://www.figma.com/design/eSa9brf8IkddzMcMuTHBG2/Sistem-Pemesanan-Tiket-Hotel?node-id=0-1&t=K0ksMtmmtNOVZMN9-1",
+        tags: ["Figma"],
+    },
 ];
 
 export default function Projects() {
@@ -73,10 +80,12 @@ export default function Projects() {
                                         Demo
                                     </a>
                                 )}
-                                <a href={project.github} target="_blank" className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-zinc-800 text-white text-sm font-medium rounded-lg hover:bg-zinc-700 transition-colors border border-zinc-700">
-                                    <Github className="w-4 h-4" />
-                                    Github
-                                </a>
+                                {project.github && (
+                                    <a href={project.github} target="_blank" className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-zinc-800 text-white text-sm font-medium rounded-lg hover:bg-zinc-700 transition-colors border border-zinc-700">
+                                        <Github className="w-4 h-4" />
+                                        Github
+                                    </a>
+                                )}
                             </div>
                         </div>
                     </div>
