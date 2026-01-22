@@ -35,6 +35,14 @@ const projects = [
         tags: ["Vite", "React", "Typescript", "Tailwind CSS"],
     },
     {
+        title: "MovieTix V2",
+        description: "Cinema booking management system.",
+        image: "/images/movietix-v2.png",
+        demo: "https://movietix-v2.vercel.app",
+        github: "https://github.com/rizkicahyaa/movietix-v2",
+        tags: ["Vite", "React", "Typescript", "Tailwind CSS"],
+    },
+    {
         title: "Ngawikerto",
         description: "Hotel booking management system (UI/UX)",
         image: "/images/ngawikerto.png",
