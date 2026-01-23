@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
     return (
-        <section id="about" className="py-20 px-4 max-w-7xl mx-auto">
+        <section id="about" className="py-32 px-4 max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row gap-12 items-start">
                 <div className="flex-1">
                     <h2 className="text-3xl font-bold text-white mb-6">About Me</h2>
