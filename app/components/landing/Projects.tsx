@@ -4,7 +4,7 @@ import { ArrowUpRight, Github, ExternalLink } from "lucide-react";
 
 const projects = [
     {
-        title: "MiraiNime",
+        title: "MiraiNime - Anime Discovery Platform",
         description: "Anime discovery platform with Jikan API.",
         image: "/images/mirainime.png",
         demo: "https://mirainime.vercel.app",
@@ -12,14 +12,14 @@ const projects = [
         tags: ["Vite", "React", "Typescript", "Tailwind CSS"],
     },
     {
-        title: "Jogja Culinary",
+        title: "Jogja Culinary - Food Discovery Platform",
         description: "Website for culinary in Jogja.",
         image: "/images/jogja-culinary.png",
         github: "https://github.com/rizkicahyaa/jogja-culinary",
         tags: ["Vite", "React", "Javascript", "Tailwind CSS", "MySQL", "Node.js", "Express.js"],
     },
     {
-        title: "Focsy",
+        title: "Focsy - Productivity Timer",
         description: "Productivity timer for deep work.",
         image: "/images/focsy-2.png",
         demo: "https://focsy.vercel.app",
@@ -27,7 +27,7 @@ const projects = [
         tags: ["Vite", "React", "Typescript", "Tailwind CSS"],
     },
     {
-        title: "Roomoria",
+        title: "Roomoria - Hotel Booking Management System",
         description: "Hotel booking management system.",
         image: "/images/roomoria.png",
         demo: "https://roomoria.vercel.app",
@@ -35,7 +35,7 @@ const projects = [
         tags: ["Vite", "React", "Typescript", "Tailwind CSS"],
     },
     {
-        title: "MovieTix V2",
+        title: "MovieTix V2 - Cinema Booking Management System",
         description: "Cinema booking management system.",
         image: "/images/movietix-v2.png",
         demo: "https://movietix-v2.vercel.app",
@@ -43,7 +43,7 @@ const projects = [
         tags: ["Vite", "React", "Typescript", "Tailwind CSS"],
     },
     {
-        title: "Ngawikerto",
+        title: "Ngawikerto - Hotel Booking Management System (UI/UX)",
         description: "Hotel booking management system (UI/UX)",
         image: "/images/ngawikerto.png",
         demo: "https://www.figma.com/design/eSa9brf8IkddzMcMuTHBG2/Sistem-Pemesanan-Tiket-Hotel?node-id=0-1&t=K0ksMtmmtNOVZMN9-1",
