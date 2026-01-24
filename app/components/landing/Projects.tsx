@@ -62,7 +62,7 @@ export default function Projects() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
                 {projects.map((project) => (
                     <div key={project.title} className="group flex flex-col bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-600 transition-colors">
-                        <div className="relative h-56 w-full bg-zinc-900">
+                        <div className="relative h-50 w-full bg-zinc-900">
                             <Image src={project.image} alt={project.title} fill className="object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
                         </div>
 
