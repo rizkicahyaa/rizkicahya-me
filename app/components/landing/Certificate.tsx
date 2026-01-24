@@ -34,7 +34,7 @@ const certificates = [
     {
         title: "Laboratory Assistant: Advanced Programming",
         issuer: "Forum Asisten, Universitas Amikom Yogyakarta",
-        date: "2025",
+        date: "2026",
     },
 ];
 
