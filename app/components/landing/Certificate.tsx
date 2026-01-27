@@ -35,6 +35,7 @@ const certificates = [
         title: "Laboratory Assistant: Advanced Programming",
         issuer: "Forum Asisten, Universitas Amikom Yogyakarta",
         date: "2026",
+        url: "https://drive.google.com/file/d/1PwPD4GkZsOqUV1YKARIejtQqyRqfrJ_Z/view?usp=sharing",
     },
 ];
 
