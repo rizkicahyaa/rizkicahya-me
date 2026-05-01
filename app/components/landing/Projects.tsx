@@ -19,6 +19,13 @@ const projects = [
         tags: ["Vite", "React", "Javascript", "Tailwind CSS", "MySQL", "Node.js", "Express.js"],
     },
     {
+        title: "Artify - Museum Recommendation",
+        description: "Museum recommendation system in Jogja.",
+        image: "/images/artify.png",
+        github: "https://github.com/rizkicahyaa/museum-recommendation-system-CF",
+        tags: ["PHP", "Javascript", "Bootstrap", "MySQL"],
+    },
+    {
         title: "Focsy - Productivity Timer",
         description: "Productivity timer for deep work.",
         image: "/images/focsy-2.png",
