@@ -14,6 +14,12 @@ const certificates = [
         url: "https://drive.google.com/file/d/1PbD1WNdOtXSMwj0NLQyLweorCMJ9u2YM/view?usp=drive_link",
     },
     {
+        title: "Website Aman di Era AI: Cara Developer Bertahan dari Serangan Hacker Modern",
+        issuer: "Dunia Coding",
+        date: "2026",
+        url: "https://duniacoding.id/certificate/E-WS127-0039",
+    },
+    {
         title: "Workshop Full Stack Developer HIMASI x BPC Amikom",
         issuer: "HIMASI x BPC Amikom",
         date: "2025",
