@@ -19,6 +19,14 @@ const projects = [
         tags: ["Vite", "React", "Javascript", "Tailwind CSS", "MySQL", "Node.js", "Express.js"],
     },
     {
+        title: "Otakuverse - Anime & Game Favorite",
+        description: "Anime & game favorite website",
+        image: "/images/otakuverse.png",
+        demo: "https://otakuverse-main.vercel.app",
+        github: "https://github.com/rizkicahyaa/fe-otakuverse.git",
+        tags: ["Vite", "React", "Javascript", "Bootstrap"],
+    },
+    {
         title: "Artify - Museum Recommendation",
         description: "Museum recommendation system in Jogja.",
         image: "/images/artify.png",
