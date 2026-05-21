@@ -34,12 +34,12 @@ const projects = [
         tags: ["PHP", "Javascript", "Bootstrap", "MySQL"],
     },
     {
-        title: "Focsy - Productivity Timer",
-        description: "Productivity timer for deep work.",
-        image: "/images/focsy-2.png",
-        demo: "https://focsy.vercel.app",
-        github: "https://github.com/rizkicahyaa/focsy",
-        tags: ["Vite", "React", "Typescript", "Tailwind CSS"],
+        title: "rizkidesign.id - Landing Page Portfolio Design",
+        description: "My landing page portfolio design",
+        image: "/images/rizkidesign.png",
+        demo: "https://rizkidesign.vercel.app",
+        github: "https://github.com/rizkicahyaa/rizkidesign",
+        tags: ["Vite", "Svelte", "Javascript", "Bootstrap"],
     },
     {
         title: "Roomoria - Hotel Booking Management System",
