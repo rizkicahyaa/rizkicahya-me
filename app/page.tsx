@@ -1,6 +1,7 @@
 import Hero from "./components/landing/Hero";
 import About from "./components/landing/About";
 import TechStack from "./components/landing/TechStack";
+import Experience from "./components/landing/Experience";
 import Projects from "./components/landing/Projects";
 import Certificate from "./components/landing/Certificate";
 import Contact from "./components/landing/Contact";
@@ -14,6 +15,7 @@ export default function Home() {
                 <Hero />
                 <About />
                 <TechStack />
+                <Experience />
                 <Projects />
                 <Certificate />
                 <Contact />
