@@ -32,11 +32,10 @@ const experiences: Experience[] = [
     },
     {
         type: "education",
-        title: "S1 - Computer Science",
         company: "Universitas Amikom Yogyakarta",
-        period: "2022 - 2026",
         description: "Studying Computer Science with a focus on software engineering, web development, and UI/UX design. Actively involved in campus laboratory activities and student organizations.",
         tags: ["Computer Science", "Software Engineering", "UI/UX"],
+        roles: [{ title: "S1 - Computer Science", period: "2022 - 2026" }],
     },
 ];
 
