@@ -1,4 +1,4 @@
-import { SiJavascript, SiReact, SiNextdotjs, SiTypescript, SiBootstrap, SiTailwindcss, SiNodedotjs, SiMysql, SiFigma, SiGit, SiLaravel, SiCodeigniter, SiPhp } from "react-icons/si";
+import { SiJavascript, SiReact, SiNextdotjs, SiTypescript, SiBootstrap, SiTailwindcss, SiNodedotjs, SiMysql, SiFigma, SiGit, SiLaravel, SiCodeigniter, SiPhp, SiSvelte, SiAstro } from "react-icons/si";
 
 export default function TechStack() {
     const stack = [
@@ -7,8 +7,8 @@ export default function TechStack() {
         { name: "TypeScript", icon: SiTypescript, color: "text-blue-500" },
         { name: "React", icon: SiReact, color: "text-blue-400" },
         { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
-        { name: "Laravel", icon: SiLaravel, color: "text-red-500" },
-        { name: "CodeIgniter", icon: SiCodeigniter, color: "text-red-500" },
+        { name: "Svelte", icon: SiSvelte, color: "text-orange-500" },
+        { name: "Astro", icon: SiAstro, color: "text-purple-400" },
         { name: "Bootstrap", icon: SiBootstrap, color: "text-purple-500" },
         { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-400" },
         { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
