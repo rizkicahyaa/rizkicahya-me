@@ -34,8 +34,15 @@ const experiences: Experience[] = [
         type: "education",
         company: "Universitas Amikom Yogyakarta",
         description: "Studying Computer Science with a focus on software engineering, web development, and UI/UX design. Actively involved in campus laboratory activities and student organizations.",
-        tags: ["Computer Science", "Software Engineering", "UI/UX"],
+        tags: ["Software Engineering", "Machine Learning / AI", "UI/UX"],
         roles: [{ title: "S1 - Computer Science", period: "2022 - 2026" }],
+    },
+    {
+        type: "education",
+        company: "SMK Muhammadiyah 1 Yogyakarta",
+        description: "Completed a vocational program in Software Engineering, specializing in web and desktop application development. Studied software development lifecycle, database management, and object-oriented programming.",
+        tags: ["Web Development", "Desktop Application", "UI/UX"],
+        roles: [{ title: "Software Engineering", period: "2019 - 2022" }],
     },
 ];
 
