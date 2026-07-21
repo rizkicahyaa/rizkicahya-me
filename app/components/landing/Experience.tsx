@@ -55,10 +55,10 @@ const experiences: Experience[] = [
 
 export default function Experience() {
     return (
-        <section id="experience" className="py-32 px-4 max-w-7xl mx-auto">
+        <section id="experience" className="py-32 px-4 max-w-7xl mx-auto" style={{ fontFamily: "var(--font-outfit), sans-serif" }}>
             <div className="mb-16">
-                <h2 className="text-3xl font-bold text-white mb-4">Experience</h2>
-                <p className="text-zinc-500 max-w-xl">My professional journey and educational background that shaped my skills and perspective.</p>
+                <h2 className="text-5xl font-bold text-white mb-4">Experience</h2>
+                <p className="text-zinc-500 max-w-xl text-xl">My professional journey and educational background that shaped my skills and perspective.</p>
             </div>
 
             <div className="space-y-4">
@@ -77,15 +77,15 @@ export default function Experience() {
                                         <div className="space-y-1 mb-2">
                                             {exp.roles.map((role) => (
                                                 <div key={role.title} className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-0.5">
-                                                    <h3 className="text-base font-semibold text-white">{role.title}</h3>
+                                                    <h3 className="text-xl font-semibold text-white">{role.title}</h3>
                                                     <span className="text-xs text-zinc-500 whitespace-nowrap">{role.period}</span>
                                                 </div>
                                             ))}
                                         </div>
                                     )}
 
-                                    <p className="text-sm text-zinc-400 mt-0.5">{exp.company}</p>
-                                    <p className="text-sm text-zinc-500 leading-relaxed mt-3">{exp.description}</p>
+                                    <p className="text-lg text-zinc-400 mt-0.5">{exp.company}</p>
+                                    <p className="text-lg text-zinc-500 leading-relaxed mt-3">{exp.description}</p>
 
                                     <div className="flex flex-wrap gap-2 mt-4">
                                         {exp.tags.map((tag) => (

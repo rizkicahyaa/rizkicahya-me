@@ -158,7 +158,7 @@ export default function Hero() {
                     <div className="flex items-center justify-center gap-3 pt-3">
                         <Link
                             href="#projects"
-                            className="flex items-center justify-center h-9 px-5 rounded-full bg-white text-black text-sm font-medium hover:bg-zinc-200 transition-colors"
+                            className="flex items-center justify-center h-9 px-5 rounded-full bg-purple-600 text-white text-sm font-medium hover:bg-purple-500 transition-colors shadow-md shadow-purple-900/40"
                         >
                             View work
                         </Link>

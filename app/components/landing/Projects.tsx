@@ -53,10 +53,10 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section id="projects" className="py-32 px-4 max-w-7xl mx-auto">
+        <section id="projects" className="py-32 px-4 max-w-7xl mx-auto" style={{ fontFamily: "var(--font-outfit), sans-serif" }}>
             <div className="mb-16">
-                <h2 className="text-3xl font-bold text-white mb-4">My Projects</h2>
-                <p className="text-zinc-500 max-w-xl">A collection of applications focusing on performance and user experience.</p>
+                <h2 className="text-5xl font-bold text-white mb-4">My Projects</h2>
+                <p className="text-zinc-500 max-w-xl text-xl">A collection of applications focusing on performance and user experience.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
@@ -68,10 +68,10 @@ export default function Projects() {
 
                         <div className="p-6 flex flex-col flex-1">
                             <div className="flex justify-between items-start mb-2">
-                                <h3 className="text-lg font-semibold text-white">{project.title}</h3>
+                                <h3 className="text-xl font-semibold text-white">{project.title}</h3>
                             </div>
 
-                            <p className="text-zinc-500 text-sm mb-6 flex-1 line-clamp-2">{project.description}</p>
+                            <p className="text-zinc-500 text-lg mb-6 flex-1 line-clamp-2">{project.description}</p>
 
                             <div className="flex flex-wrap gap-2 mb-6">
                                 {project.tags.map((tag) => (
@@ -83,7 +83,7 @@ export default function Projects() {
 
                             <div className="flex gap-3 mt-auto">
                                 {project.demo && (
-                                    <a href={project.demo} target="_blank" className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-white text-black text-sm font-medium rounded-lg hover:bg-zinc-200 transition-colors">
+                                    <a href={project.demo} target="_blank" className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-purple-600 text-white text-sm font-medium rounded-lg hover:bg-purple-500 transition-colors shadow-md shadow-purple-900/30">
                                         <ExternalLink className="w-4 h-4" />
                                         Demo
                                     </a>
@@ -101,7 +101,7 @@ export default function Projects() {
             </div>
 
             <div className="flex justify-center">
-                <Link href="https://github.com/rizkicahyaa?tab=repositories" target="_blank" className="flex w-full sm:w-auto items-center justify-center h-12 px-8 rounded-full bg-white text-black font-medium hover:bg-zinc-200 transition-colors">
+                <Link href="https://github.com/rizkicahyaa?tab=repositories" target="_blank" className="flex w-full sm:w-auto items-center justify-center h-12 px-8 rounded-full bg-purple-600 text-white font-medium hover:bg-purple-500 transition-colors shadow-lg shadow-purple-900/30">
                     View all projects
                 </Link>
             </div>

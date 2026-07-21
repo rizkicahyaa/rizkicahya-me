@@ -47,11 +47,11 @@ const certificates = [
 
 export default function Certificate() {
     return (
-        <section id="certificates" className="py-32 border-y border-zinc-900">
+        <section id="certificates" className="py-32 border-y border-zinc-900" style={{ fontFamily: "var(--font-outfit), sans-serif" }}>
             <div className="px-4 max-w-7xl mx-auto">
                 <div className="mb-16">
-                    <h2 className="text-3xl font-bold text-white mb-4">Certificates</h2>
-                    <p className="text-zinc-500 max-w-xl">Professional certifications and achievements that validate my skills and expertise.</p>
+                    <h2 className="text-5xl font-bold text-white mb-4">Certificates</h2>
+                    <p className="text-zinc-500 max-w-xl text-xl">Professional certifications and achievements that validate my skills and expertise.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -62,14 +62,14 @@ export default function Certificate() {
                                     <div className="flex items-start gap-3 flex-1">
                                         {/* <Award className="w-5 h-5 text-zinc-400 mt-1 shrink-0" /> */}
                                         <div className="flex-1">
-                                            <h3 className="text-lg font-semibold text-white group-hover:text-zinc-100 transition-colors">{certificate.title}</h3>
+                                            <h3 className="text-xl font-semibold text-white group-hover:text-zinc-100 transition-colors">{certificate.title}</h3>
                                         </div>
                                     </div>
                                     <ExternalLink className="w-5 h-5 text-zinc-400 group-hover:text-white transition-colors shrink-0" />
                                 </div>
 
-                                <p className="text-zinc-400 text-sm mb-2">{certificate.issuer}</p>
-                                <p className="text-zinc-500 text-xs">{certificate.date}</p>
+                                <p className="text-zinc-400 text-lg mb-2">{certificate.issuer}</p>
+                                <p className="text-zinc-500 text-base">{certificate.date}</p>
                             </div>
                         </a>
                     ))}

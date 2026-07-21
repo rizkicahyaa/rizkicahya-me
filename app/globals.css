@@ -10,7 +10,7 @@ html {
     --card: #18181b; /* Zinc 900 */
     --card-hover: #27272a; /* Zinc 800 */
     --border: #27272a; /* Zinc 800 */
-    --primary: #3b82f6; /* Blue 500 */
+    --primary: #a855f7; /* Purple 500 */
 }
 
 @theme inline {
@@ -22,6 +22,7 @@ html {
     --color-primary: var(--primary);
     --font-sans: var(--font-inter);
     --font-mono: var(--font-geist-mono);
+    --font-outfit: var(--font-outfit);
 }
 
 @layer utilities {
@@ -40,7 +41,7 @@ body {
 }
 
 ::selection {
-    background-color: rgba(59, 130, 246, 0.3);
+    background-color: rgba(168, 85, 247, 0.3);
     color: #ffffff;
 }
 
