@@ -19,7 +19,7 @@ export default function Contact() {
                         <a href="https://www.linkedin.com/in/rizkicahya/" target="_blank" className="p-3 bg-zinc-900 rounded-full text-zinc-400 border border-zinc-800 hover:text-white hover:border-zinc-700 transition-colors">
                             <Linkedin className="w-5 h-5" />
                         </a>
-                        <a href="https://www.instagram.com/millioree/" target="_blank" className="p-3 bg-zinc-900 rounded-full text-zinc-400 border border-zinc-800 hover:text-white hover:border-zinc-700 transition-colors">
+                        <a href="https://www.instagram.com/chyrzkrd/" target="_blank" className="p-3 bg-zinc-900 rounded-full text-zinc-400 border border-zinc-800 hover:text-white hover:border-zinc-700 transition-colors">
                             <Instagram className="w-5 h-5" />
                         </a>
                     </div>
