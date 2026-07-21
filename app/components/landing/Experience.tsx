@@ -31,6 +31,13 @@ const experiences: Experience[] = [
         roles: [{ title: "Laboratory Assistant", period: "Feb 2025 - January 2026" }],
     },
     {
+        type: "work",
+        company: "Jogja Media Web",
+        description: "As a Web Developer Intern, I contribute to web development projects.",
+        tags: ["Web Development", "UI/UX"],
+        roles: [{ title: "Web Developer", period: "Feb 2021 - May 2021" }],
+    },
+    {
         type: "education",
         company: "Universitas Amikom Yogyakarta",
         description: "Studying Computer Science with a focus on software engineering, web development, and UI/UX design. Actively involved in campus laboratory activities and student organizations.",
