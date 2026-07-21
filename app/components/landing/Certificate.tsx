@@ -1,4 +1,4 @@
-import { ExternalLink, Award } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const certificates = [
     {
@@ -47,29 +47,37 @@ const certificates = [
 
 export default function Certificate() {
     return (
-        <section id="certificates" className="py-32 border-y border-zinc-900" style={{ fontFamily: "var(--font-outfit), sans-serif" }}>
-            <div className="px-4 max-w-7xl mx-auto">
+        <section id="certificates" className="py-32" style={{ fontFamily: "var(--font-outfit), sans-serif" }}>
+            <div className="px-4 max-w-4xl mx-auto">
                 <div className="mb-16">
                     <h2 className="text-5xl font-bold text-white mb-4">Certificates</h2>
                     <p className="text-zinc-500 max-w-xl text-xl">Professional certifications and achievements that validate my skills and expertise.</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {certificates.map((certificate) => (
-                        <a key={certificate.title} href={certificate.url} target="_blank" rel="noopener noreferrer" className="group flex flex-col bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-600 transition-colors">
-                            <div className="p-6 flex flex-col flex-1">
-                                <div className="flex items-start justify-between gap-3 mb-3">
-                                    <div className="flex items-start gap-3 flex-1">
-                                        {/* <Award className="w-5 h-5 text-zinc-400 mt-1 shrink-0" /> */}
-                                        <div className="flex-1">
-                                            <h3 className="text-xl font-semibold text-white group-hover:text-zinc-100 transition-colors">{certificate.title}</h3>
-                                        </div>
-                                    </div>
-                                    <ExternalLink className="w-5 h-5 text-zinc-400 group-hover:text-white transition-colors shrink-0" />
+                <div className="divide-y divide-zinc-800/60">
+                    {certificates.map((certificate, index) => (
+                        <a
+                            key={certificate.title}
+                            href={certificate.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group flex items-center justify-between gap-6 py-5 hover:bg-zinc-900/30 px-4 -mx-4 rounded-xl transition-all duration-200"
+                        >
+                            <div className="flex items-start gap-5 flex-1 min-w-0">
+                                <span className="text-zinc-600 text-base font-mono mt-0.5 shrink-0 w-6 text-right">
+                                    {String(index + 1).padStart(2, "0")}
+                                </span>
+                                <div className="flex-1 min-w-0">
+                                    <h3 className="text-lg font-semibold text-white group-hover:text-purple-300 transition-colors leading-snug">
+                                        {certificate.title}
+                                    </h3>
+                                    <p className="text-zinc-500 text-base mt-1">{certificate.issuer}</p>
                                 </div>
+                            </div>
 
-                                <p className="text-zinc-400 text-lg mb-2">{certificate.issuer}</p>
-                                <p className="text-zinc-500 text-base">{certificate.date}</p>
+                            <div className="flex items-center gap-4 shrink-0">
+                                <span className="text-zinc-600 text-sm font-medium tabular-nums">{certificate.date}</span>
+                                <ExternalLink className="w-4 h-4 text-zinc-600 group-hover:text-purple-400 transition-colors" />
                             </div>
                         </a>
                     ))}

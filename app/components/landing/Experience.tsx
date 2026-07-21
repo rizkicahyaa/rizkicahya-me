@@ -27,7 +27,7 @@ const experiences: Experience[] = [
         type: "work",
         company: "Forum Asisten, Universitas Amikom Yogyakarta",
         description: "Served as a Laboratory Assistant for Programming, Web Programming, and Advanced Programming courses, guiding students through practical sessions, assisting in troubleshooting coding issues, and supporting lecturers in delivering hands-on learning materials.",
-        tags: ["C#", "HTML", "CSS", "JavaScript", "PHP", "WinForm", ".NET"],
+        tags: ["C#", "HTML", "CSS", "JavaScript", "PHP", "SQL", "WinForm", ".NET"],
         roles: [{ title: "Laboratory Assistant", period: "Feb 2025 - January 2026" }],
     },
     {
@@ -41,7 +41,7 @@ const experiences: Experience[] = [
         type: "education",
         company: "Universitas Amikom Yogyakarta",
         description: "Studying Computer Science with a focus on software engineering, web development, and UI/UX design. Actively involved in campus laboratory activities and student organizations.",
-        tags: ["Software Engineering", "Machine Learning / AI", "UI/UX"],
+        tags: ["Software Engineering", "Web Development", "Machine Learning / AI", "Graphic Design", "UI/UX"],
         roles: [{ title: "S1 - Computer Science", period: "2022 - 2026" }],
     },
     {
