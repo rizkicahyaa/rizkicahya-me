@@ -17,11 +17,7 @@ const jsonLines: JsonLine[] = [
     { type: "bracket", text: "}" },
 ];
 
-const greetings = [
-    { lang: "id", text: 'echo "Halo, Selamat Datang!"', output: "Halo, Selamat Datang!", color: "text-emerald-400" },
-    { lang: "en", text: 'echo "Hello, Welcome!"', output: "Hello, Welcome!", color: "text-sky-400" },
-    { lang: "jp", text: 'echo "こんにちは、ようこそ！"', output: "こんにちは、ようこそ！", color: "text-pink-400" },
-];
+const greetings = [{ lang: "jp", text: 'echo "こんにちは、ようこそ！"', output: "こんにちは、ようこそ！", color: "text-pink-400" }];
 
 // Total phases:
 // 0..jsonLines.length-1 → JSON lines
