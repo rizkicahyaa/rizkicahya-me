@@ -39,7 +39,7 @@ const projects = [
         image: "/images/otakuverse.png",
         demo: "https://otakuverse-main.vercel.app",
         github: "https://github.com/rizkicahyaa/fe-otakuverse.git",
-        tags: ["Vite", "React", "Javascript", "Bootstrap"],
+        tags: ["Vite", "Typescript", "React", "Bootstrap"],
     },
     {
         title: "Ngawikerto",
@@ -99,8 +99,14 @@ export default function Projects() {
                 ))}
             </div>
 
-            <div className="flex justify-center">
-                <Link href="https://github.com/rizkicahyaa?tab=repositories" target="_blank" className="flex w-full sm:w-auto items-center justify-center h-12 px-8 rounded-full bg-purple-600 text-white font-medium hover:bg-purple-500 transition-colors shadow-lg shadow-purple-900/30">
+            <div className="flex flex-col items-center gap-4">
+                <p className="text-zinc-500 text-sm text-center max-w-sm">
+                    I also have portfolios in <span className="text-zinc-300 font-medium">Graphic Design</span>
+                    {" & "}
+                    <span className="text-zinc-300 font-medium">Digital Art</span>
+                    {" feel free to reach out!"}
+                </p>
+                <Link href="https://drive.google.com/drive/folders/1MjFnP0EXZHoM2cAqNb-1dCi_BkyC3b0G?usp=sharing" target="_blank" className="flex w-full sm:w-auto items-center justify-center h-12 px-8 rounded-full bg-purple-600 text-white font-medium hover:bg-purple-500 transition-colors shadow-lg shadow-purple-900/30">
                     View all projects
                 </Link>
             </div>
