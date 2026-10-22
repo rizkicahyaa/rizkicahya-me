@@ -12,19 +12,20 @@ const projects = [
         tags: ["Vite", "Typescript", "React", "Tailwind CSS"],
     },
     {
-        title: "Trip.yuk",
-        description: "Indonesian destination system",
-        image: "/images/trip-yuk.png",
-        github: "https://github.com/rizkicahyaa/trip-yuk",
-        tags: ["Vite", "Javascript", "React", "Laravel", "Inertia.js", "Tailwind CSS", "Node.js"],
-    },
-    {
         title: "Lume Gumi Corp.",
         description: "Lume Gumi Corp. (Indie Game Developer) company profile",
         image: "/images/lumegumi.png",
         demo: "https://lumegumi-corp.vercel.app",
         github: "https://github.com/rizkicahyaa/lumegumi-corp.git",
         tags: ["Vite", "Typescript", "Next.js", "Tailwind CSS"],
+    },
+    {
+        title: "GameLan Yk",
+        description: "GameLan Yk is a project for GameLan Yk.",
+        image: "/images/gamelan-yk.png",
+        demo: "https://gamelan-yk.vercel.app",
+        github: "https://github.com/rizkicahyaa/gamelan-yk.git",
+        tags: ["Vite", "Typescript", "Next.js", "Bootstrap"],
     },
     {
         title: "Jogja Culinary",
