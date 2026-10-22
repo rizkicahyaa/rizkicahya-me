@@ -21,7 +21,7 @@ const projects = [
     },
     {
         title: "GameLan Yk",
-        description: "GameLan Yk is a project for GameLan Yk.",
+        description: "GameLan Yk is a project for community Indie Game Dev Yogyakarta",
         image: "/images/gamelan-yk.png",
         demo: "https://gamelan-yk.vercel.app",
         github: "https://github.com/rizkicahyaa/gamelan-yk.git",
