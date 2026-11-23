@@ -18,7 +18,7 @@ export default function TechStack() {
     ];
 
     return (
-        <section className="py-20 border-y border-zinc-900" style={{ fontFamily: "var(--font-outfit), sans-serif" }}>
+        <section className="py-20 border-y border-zinc-900">
             <div className="max-w-4xl mx-auto px-4 flex flex-col items-center">
                 <p className="text-zinc-500 text-lg font-medium uppercase tracking-widest mb-10">Tech Stack</p>
 

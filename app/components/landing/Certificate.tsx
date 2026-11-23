@@ -47,7 +47,7 @@ const certificates = [
 
 export default function Certificate() {
     return (
-        <section id="certificates" className="py-32" style={{ fontFamily: "var(--font-outfit), sans-serif" }}>
+        <section id="certificates" className="py-32">
             <div className="px-4 max-w-4xl mx-auto">
                 <div className="mb-16">
                     <h2 className="text-5xl font-bold text-white mb-4">Certificates</h2>

@@ -194,10 +194,10 @@ export default function Hero() {
                         Front-end Developer
                     </p>
                     <div className="flex items-center justify-center gap-3 pt-3">
-                        <Link href="#projects" className="flex items-center justify-center h-9 px-5 rounded-full bg-purple-600 text-white text-sm font-medium hover:bg-purple-500 transition-colors shadow-md shadow-purple-900/40">
+                        <Link href="/projects" className="flex items-center justify-center h-9 px-5 rounded-full bg-purple-600 text-white text-sm font-medium hover:bg-purple-500 transition-colors shadow-md shadow-purple-900/40">
                             View work
                         </Link>
-                        <Link href="#contact" className="flex items-center justify-center h-9 px-5 rounded-full bg-zinc-900 text-white text-sm font-medium hover:bg-zinc-800 transition-colors gap-1.5 border border-zinc-700">
+                        <Link href="/contact" className="flex items-center justify-center h-9 px-5 rounded-full bg-zinc-900 text-white text-sm font-medium hover:bg-zinc-800 transition-colors gap-1.5 border border-zinc-700">
                             Contact
                             <ArrowRight className="w-3.5 h-3.5" />
                         </Link>

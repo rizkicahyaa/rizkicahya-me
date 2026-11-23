@@ -21,8 +21,7 @@ html {
     --color-border: var(--border);
     --color-primary: var(--primary);
     --font-sans: var(--font-inter);
-    --font-mono: var(--font-geist-mono);
-    --font-outfit: var(--font-outfit);
+    --font-mono: "Consolas", "Courier New", monospace;
 }
 
 @layer utilities {

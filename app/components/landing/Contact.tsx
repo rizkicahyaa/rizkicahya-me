@@ -2,7 +2,7 @@ import { Mail, Github, Linkedin, Instagram } from "lucide-react";
 
 export default function Contact() {
     return (
-        <section id="contact" className="py-32 px-4" style={{ fontFamily: "var(--font-outfit), sans-serif" }}>
+        <section id="contact" className="py-32 px-4">
             <div className="max-w-xl mx-auto text-center">
                 <h2 className="text-5xl font-bold text-white mb-6">Ready to work together?</h2>
                 <p className="text-zinc-500 text-xl mb-10">I'm currently available for freelance projects and full-time roles.</p>

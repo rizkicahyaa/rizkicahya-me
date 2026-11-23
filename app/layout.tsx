@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/landing/Navbar";
 
 const inter = Inter({
     subsets: ["latin"],
     variable: "--font-inter",
-});
-
-const spaceGrotesk = Space_Grotesk({
-    subsets: ["latin"],
-    variable: "--font-outfit",
-    weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -25,7 +20,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className="scroll-smooth">
-            <body className={`${inter.variable} ${spaceGrotesk.variable} ${inter.className}`}>{children}</body>
+            <body className={`${inter.variable} ${inter.className}`}>
+                <div className="min-h-screen bg-zinc-950 bg-grid-white/[0.02] text-white selection:bg-zinc-800 selection:text-white font-sans relative">
+                    <Navbar />
+                    <main className="pt-24">{children}</main>
+                </div>
+            </body>
         </html>
     );
 }
