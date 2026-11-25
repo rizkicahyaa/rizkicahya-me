@@ -34,14 +34,56 @@ const animeList: InterestItem[] = [
         category: "Anime",
         genre: "Action, Comedy, Supernatural",
     },
+    {
+        title: "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+        image: "/images/interests/seishun-buta.jpg",
+        category: "Anime",
+        genre: "Drama, Romance, Supernatural, School",
+    },
+    {
+        title: "Kono Subarashii Sekai ni Shukufuku wo!",
+        image: "/images/interests/konosuba.jpg",
+        category: "Anime",
+        genre: "Adventure, Comedy, Fantasy, Parody",
+    },
+    {
+        title: "Uma Musume: Pretty Derby",
+        image: "/images/interests/umamusume-2.jpg",
+        category: "Anime",
+        genre: "Sports, Racing, School",
+    },
 ];
 
 const gamesList: InterestItem[] = [
     {
-        title: "Game Title",
-        image: "/interests/game-title.jpg",
-        category: "PC Game",
-        genre: "A short description about this game.",
+        title: "Genshin Impact",
+        image: "/images/interests/genshin-impact.png",
+        category: "PC / Mobile Game",
+        genre: "Action RPG, Open World, Fantasy",
+    },
+    {
+        title: "Honkai: Star Rail",
+        image: "/images/interests/hsr.jpg",
+        category: "PC / Mobile Game",
+        genre: "Turn-Based, J-RPG, Fantasy",
+    },
+    {
+        title: "Umamusume: Pretty Derby",
+        image: "/images/interests/uma.webp",
+        category: "PC / Mobile Game",
+        genre: "Racing RPG, Sports",
+    },
+    {
+        title: "Arknights",
+        image: "/images/interests/arknights.jpg",
+        category: "PC / Mobile Game",
+        genre: "Tower Defense, Tactical RPG, Fantasy",
+    },
+    {
+        title: "Morimens",
+        image: "/images/interests/morimens.webp",
+        category: "PC / Mobile Game",
+        genre: "Roguelite Deck-Builder, Turn-Based RPG, Visual Novel",
     },
 ];
 
