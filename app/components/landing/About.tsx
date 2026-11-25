@@ -87,7 +87,9 @@ export default function About() {
             <div className="flex flex-col-reverse md:flex-row gap-12 items-center mb-32">
                 {/* Description */}
                 <div className="flex-1">
-                    <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-6">About Me</h2>
+                    <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-6">
+                        About Me<span className="text-zinc-600">.</span>
+                    </h2>
 
                     <div className="space-y-4 text-zinc-500 leading-relaxed text-lg md:text-xl">
                         <p className="text-justify">Hi! My name is Rizki Cahya Ramdani, a Computer Science graduate from Universitas Amikom Yogyakarta. I have experience as a Laboratory Assistant for Programming, Web Programming, and Advanced Programming courses, where I guided students in understanding programming concepts and completing practical projects. I also gained professional experience as a Full-Stack Web Developer Intern at Jogja Media Web and as a Graphic Designer & Web Developer at Lume Gumi, an indie game development studio.</p>
@@ -107,7 +109,9 @@ export default function About() {
             {/* Experience */}
             <div id="experience" className="scroll-mt-28">
                 <div className="mb-12">
-                    <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-6">Experience</h2>
+                    <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-6">
+                        Experience<span className="text-zinc-600">.</span>
+                    </h2>
 
                     <p className="text-zinc-500 max-w-xl text-lg md:text-xl">My professional journey and educational background that shaped my skills and perspective.</p>
                 </div>

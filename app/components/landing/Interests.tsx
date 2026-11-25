@@ -6,15 +6,33 @@ type InterestItem = {
     title: string;
     image: string;
     category: string;
-    description: string;
+    genre: string;
 };
 
 const animeList: InterestItem[] = [
     {
-        title: "Anime Title",
-        image: "/interests/anime-title.jpg",
+        title: "Neon Genesis Evangelion",
+        image: "/images/interests/evangelion.jpg",
         category: "Anime",
-        description: "A short description about this anime.",
+        genre: "Action, Drama, Mecha, Sci-Fi, Psychological",
+    },
+    {
+        title: "Angel Beats",
+        image: "/images/interests/angel-beats.jpg",
+        category: "Anime",
+        genre: "Drama, Fantasy, School",
+    },
+    {
+        title: "Demon Slayer: Kimetsu no Yaiba",
+        image: "/images/interests/demon-slayer.jpg",
+        category: "Anime",
+        genre: "Action, Historical, Supernatural, Shounen",
+    },
+    {
+        title: "Dandadan",
+        image: "/images/interests/dandadan.jpg",
+        category: "Anime",
+        genre: "Action, Comedy, Supernatural",
     },
 ];
 
@@ -23,7 +41,7 @@ const gamesList: InterestItem[] = [
         title: "Game Title",
         image: "/interests/game-title.jpg",
         category: "PC Game",
-        description: "A short description about this game.",
+        genre: "A short description about this game.",
     },
 ];
 
@@ -31,7 +49,7 @@ function InterestCard({ item }: { item: InterestItem }) {
     return (
         <div className="group overflow-hidden rounded-xl bg-zinc-900/50 border border-zinc-800 hover:border-zinc-600 transition-all">
             <div className="relative aspect-[3/4] overflow-hidden bg-zinc-900">
-                <Image src={item.image} alt={item.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <Image src={item.image} alt={item.title} fill className="object-cover" />
             </div>
 
             <div className="p-4">
@@ -39,7 +57,7 @@ function InterestCard({ item }: { item: InterestItem }) {
 
                 <h3 className="text-lg font-semibold text-white mt-1">{item.title}</h3>
 
-                <p className="text-sm text-zinc-500 mt-2 leading-relaxed">{item.description}</p>
+                <p className="text-sm text-zinc-500 mt-2 leading-relaxed">{item.genre}</p>
             </div>
         </div>
     );
@@ -50,8 +68,6 @@ export default function Interests() {
         <section className="min-h-screen py-32 px-4 max-w-7xl mx-auto">
             {/* Hero */}
             <div className="mb-20">
-                <p className="text-sm text-zinc-500 mb-4 tracking-widest uppercase">A Little About Me</p>
-
                 <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6">
                     Interests<span className="text-zinc-600">.</span>
                 </h1>
