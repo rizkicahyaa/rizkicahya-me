@@ -22,8 +22,9 @@ export default function Navbar() {
             <div className="flex justify-between items-center max-w-7xl mx-auto">
                 {/* Logo */}
                 <Link href="/" className="text-2xl font-bold tracking-tighter">
-                    <span>&lt;</span>
-                    Rizki Cahya /<span>&gt;</span>
+                    {/* <span>&lt;</span>
+                    Rizki Cahya /<span>&gt;</span> */}
+                    @rizkicahya.
                 </Link>
 
                 {/* Desktop nav */}
