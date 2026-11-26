@@ -10,7 +10,7 @@ type JsonLine = { type: "bracket"; text: string } | { type: "keyvalue"; key: str
 const jsonLines: JsonLine[] = [
     { type: "bracket", text: "{" },
     { type: "keyvalue", key: `  "name"`, value: `"Rizki Cahya Ramdani"`, hasComma: true },
-    { type: "keyvalue", key: `  "role"`, value: `"Front-end Developer, Graphic Design, UI/UX"`, hasComma: true },
+    { type: "keyvalue", key: `  "role"`, value: `"Full-stack Developer, Graphic Designer, UI/UX Designer"`, hasComma: true },
     { type: "keyvalue", key: `  "location"`, value: `"Yogyakarta, Indonesia"`, hasComma: true },
     { type: "keyvalue", key: `  "education"`, value: `"University of Amikom Yogyakarta"`, hasComma: true },
     { type: "keyvalue", key: `  "degree"`, value: `"Bachelor of Computer Science"`, hasComma: true },
@@ -191,7 +191,7 @@ export default function Hero() {
                         Rizki Cahya
                     </p>
                     <p className="text-sm text-zinc-500" style={{ fontFamily: "Consolas, 'Courier New', monospace" }}>
-                        Front-end Developer
+                        Full-stack Developer | Graphic Designer | UI/UX Designer
                     </p>
                     <div className="flex items-center justify-center gap-3 pt-3">
                         <Link href="/projects" className="flex items-center justify-center h-9 px-5 rounded-full bg-purple-600 text-white text-sm font-medium hover:bg-purple-500 transition-colors shadow-md shadow-purple-900/40">
