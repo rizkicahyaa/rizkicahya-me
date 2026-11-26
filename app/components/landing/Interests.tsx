@@ -52,6 +52,12 @@ const animeList: InterestItem[] = [
         category: "Anime",
         genre: "Sports, Racing, School",
     },
+    {
+        title: "Charlotte",
+        image: "/images/interests/charlotte.jpg",
+        category: "Anime",
+        genre: "Drama, School, Superpower",
+    },
 ];
 
 const gamesList: InterestItem[] = [
