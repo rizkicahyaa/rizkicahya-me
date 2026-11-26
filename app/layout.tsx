@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: "@rizkichrmdn | Profile",
+    title: "Rizki Cahya - Full Stack & AI Enthusiast",
     description: "Professional portfolio",
 };
 
