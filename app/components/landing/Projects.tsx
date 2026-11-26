@@ -20,14 +20,6 @@ const projects = [
         tags: ["Vite", "Typescript", "Next.js", "Tailwind CSS"],
     },
     {
-        title: "GameLan Yk",
-        description: "GameLan Yk is a project for community Indie Game Dev Yogyakarta",
-        image: "/images/gamelan-yk.png",
-        demo: "https://gamelan-yk.vercel.app",
-        github: "https://github.com/rizkicahyaa/gamelan-yk.git",
-        tags: ["Vite", "Typescript", "Next.js", "Bootstrap"],
-    },
-    {
         title: "Jogja Culinary",
         description: "Website for culinary in Jogja.",
         image: "/images/jogja-culinary.png",
